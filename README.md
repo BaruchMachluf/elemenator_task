@@ -9,8 +9,11 @@ For the python assignment, I did the follwing:
 In order to run this system, do the following:
 1. Add the csv file with the urls to the following path >> "/usr/sites/"
 2. Update the following 3 params (for the DB connection) in the python script:
+
 mysql_host = <add DB host>
+  
 mysql_db_user = <add DB user>
+  
 mysql_password = <add DB password>
   
 
