@@ -16,6 +16,18 @@ mysql_db_user = "add DB user"
 
 mysql_password = "add DB password"
 
+3. create the following table in the mysql DB:
+
+create table maint.site_risk_managment (
+id int auto_increment primary key,
+site_url varchar(200) not null,
+last_check_request timestamp default CURRENT_TIMESTAMP not null,
+status varchar(10) not null,
+classification varchar(256) not null,
+voting varchar(256) not null
+);
+
+
 
 Call the program with one parameter - the file name.
 The program will make sure to update the DB on the risk status for each url in that file.
